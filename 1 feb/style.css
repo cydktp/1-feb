@@ -1,0 +1,79 @@
+hr{
+    color: gold;
+}
+*{
+    color: blue;
+}
+
+.rojo{
+    color: red;
+}
+#pid{
+    color: green;
+}
+h2,h3{
+    color: hotpink;
+}
+div + p{
+    color: indigo;
+}
+div p span{
+    color: lawngreen;
+}
+p[title]{
+    color: lightseagreen;
+}
+a[href="https://mestreacasa.gva.es/web/ieselgrao"]{
+    color: orange;
+}
+a[href*="mestreacasa"]{
+    font-weight: bold;
+}
+div.contenedor{
+    border: 1px teal solid;
+}
+div p:first-child{
+    color: brown;
+}
+a:link{
+    background-color: cornflowerblue;
+}
+a:visited{
+    background-color: crimson;
+}
+
+p.hover:hover{
+    color: palegreen;
+    background-color: coral;   
+}
+p.activo:active{
+    background-color: black;
+    color: mintcream;
+}
+input:focus{
+    color: mediumslateblue;
+}
+button:active{
+    background-color: orangered;
+    color: darkcyan;
+}
+p::first-line{
+    color: navy;
+}
+p.antes::before{
+    content: "(COVID19)";
+    font-weight: bold;
+}
+p.despues::after{
+    content: "recuerda esto";
+    background-color: khaki;
+    color: lightsalmon;
+    font-weight: bold;
+}
+h4{
+    counter-reset: cuenta_ciclos;
+}
+p.ciclos::before{
+    content:  counter(cuenta_ciclos) ". ";
+    counter-increment: cuenta_ciclos ;
+}
